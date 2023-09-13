@@ -1,6 +1,13 @@
 import CardGame from "../../CardGame";
-
+import './style.css'
 export default function BoardGame(AmountCards){
-    const Boardgame = CardGame().repeat(AmountCards)
-    return Boardgame;
+
+    const htmlContent = CardGame().repeat(AmountCards)
+
+
+    return`
+    <section class="board-game">
+        ${htmlContent}
+    </section>
+    `
 }
