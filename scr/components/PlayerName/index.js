@@ -1,6 +1,7 @@
+import './style.css'
 export default function Playername(content){
     return`
-        <p>${content}</p>
+        <p class="player-name">${content}</p>
     
     `
 }
